@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Albra";
+    src: url(../font/Albra\ Regular.otf);
+}
+
+/*///////////////////////////////////////////
+///////////////// HEADER ///////////////////
+/////////////////////////////////////////*/
+
+#contenedorHeader{
+    height: 511px;
+    background-image: url(../img/fondo_header.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contenedorHeaderLogo{
+    transform: translateY(-90px);
+}
+
+#contenedorHeaderNav{
+    transform: translateY(-65px);
+    width: 80%;
+}
+
+#contenedorHeaderNav ul{
+    font-family: "Albra", serif;
+    font-size: 16pt;
+    color: #453E40;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#contenedorHeaderNav ul li {
+    padding: 20px;
+}
+
+.hoverTrazo{
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-image 3s;
+}
+
+.hoverIcon:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.hoverTrazo:hover{
+    cursor: pointer;
+    background-image: url(../img/trazo_links.png);
+    
+}
+
+
