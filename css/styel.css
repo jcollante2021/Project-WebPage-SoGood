@@ -8,6 +8,11 @@
     src: url(../font/Albra\ Regular.otf);
 }
 
+@font-face {
+    font-family: "Muli";
+    src: url(../font/Muli\ Light.ttf);
+}
+
 a:link, a:visited, a:active {
     text-decoration:none;
 }
@@ -24,6 +29,7 @@ a:link, a:visited, a:active {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 #contenedorHeaderLogo{
@@ -67,7 +73,7 @@ a:link, a:visited, a:active {
 
 #btnTuMarca{
     position: absolute;
-    bottom: 139px;
+    bottom: 64px;
     width: 365px;
     height: 56px;
     background-color: #453E40;
@@ -88,4 +94,26 @@ a:link, a:visited, a:active {
 #btnTuMarca:hover{
     cursor: pointer;
     background-color: #a7a398; 
+}
+
+/*///////////////////////////////////////////
+///////////////// INTRO  ///////////////////
+/////////////////////////////////////////*/
+
+#contenedorIntro{
+    width: 100%;
+    height: 250px;
+    background-color: #453E40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedorIntro p {
+    color: #FFFFFF;
+    font-family: "Muli", serif;
+    font-size: 19pt;
+    text-align: center;
+    padding: 0 200px 0 200px;
+    word-spacing: 3pt;    
 }
