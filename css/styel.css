@@ -8,6 +8,10 @@
     src: url(../font/Albra\ Regular.otf);
 }
 
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
 /*///////////////////////////////////////////
 ///////////////// HEADER ///////////////////
 /////////////////////////////////////////*/
@@ -59,7 +63,29 @@
 .hoverTrazo:hover{
     cursor: pointer;
     background-image: url(../img/trazo_links.png);
-    
 }
 
+#btnTuMarca{
+    position: absolute;
+    bottom: 139px;
+    width: 365px;
+    height: 56px;
+    background-color: #453E40;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .16);
+}
 
+#btnTuMarca p {
+    color: #FFFFFF;
+    font-family: "Albra", serif;
+    font-size: 18pt;
+}
+
+#btnTuMarca:hover{
+    cursor: pointer;
+    background-color: #a7a398; 
+}
