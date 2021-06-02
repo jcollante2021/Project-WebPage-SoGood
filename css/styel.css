@@ -2,21 +2,17 @@
     padding: 0;
     margin: 0;
 }
-
 @font-face {
     font-family: "Albra";
     src: url(../font/Albra\ Regular.otf);
 }
-
 @font-face {
     font-family: "Muli";
     src: url(../font/Muli\ Light.ttf);
 }
-
 a:link, a:visited, a:active {
     text-decoration:none;
 }
-
 body{
     background-image: url(../img/fondo_body_web_page.jpg);
     background-repeat: no-repeat;
@@ -38,16 +34,13 @@ body{
     justify-content: center;
     position: relative;
 }
-
 #contenedorHeaderLogo{
     transform: translateY(-90px);
 }
-
 #contenedorHeaderNav{
     transform: translateY(-65px);
     width: 80%;
 }
-
 #contenedorHeaderNav ul{
     font-family: "Albra", serif;
     font-size: 16pt;
@@ -57,27 +50,22 @@ body{
     flex-direction: row;
     justify-content: space-around;
 }
-
 #contenedorHeaderNav ul li {
     padding: 20px;
 }
-
 .hoverTrazo{
     background-repeat: no-repeat;
     background-position: center;
     transition: background-image 3s;
 }
-
 .hoverIcon:hover{
     cursor: pointer;
     opacity: 0.7;
 }
-
 .hoverTrazo:hover{
     cursor: pointer;
     background-image: url(../img/trazo_links.png);
 }
-
 #btnTuMarca{
     position: absolute;
     bottom: 64px;
@@ -91,13 +79,11 @@ body{
     transition: .2s;
     box-shadow: 0 10px 10px rgba(0, 0, 0, .16);
 }
-
 #btnTuMarca p {
     color: #FFFFFF;
     font-family: "Albra", serif;
     font-size: 18pt;
 }
-
 #btnTuMarca:hover{
     cursor: pointer;
     background-color: #a7a398; 
@@ -115,7 +101,6 @@ body{
     justify-content: center;
     align-items: center;
 }
-
 #contenedorIntro p {
     color: #FFFFFF;
     font-family: "Muli", serif;
@@ -135,4 +120,67 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/*///////////////////////////////////////////
+//////////////// ABOUT ME //////////////////
+/////////////////////////////////////////*/
+
+#contenedorAboutMe{
+    width: 100%;
+    height: 100vh;
+    background-color: #ECECEE;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 20% 60% 20%;
+    grid-template-areas:    "titulo img"
+                            "parrafo img"
+                            "boton img";
+    
+}
+#contenedorAboutMe h2{
+    color: #453E40;
+    font-family: "Albra", serif;
+    font-size: 35pt;
+    grid-area: titulo;
+    align-self: flex-end;
+    padding-left: 100px;
+    align-self: center;
+}
+#contenedorAboutMe p{
+    color: #453E40;
+    font-family: "Muli", serif;
+    font-size: 18pt;
+    grid-area: parrafo;
+    align-self: center;
+    justify-self: center;
+    line-height: 25pt;
+}
+#btnTrabajamosJuntos{
+    align-self: center;
+    justify-self: center;
+    grid-area: boton;
+    width: 365px;
+    height: 56px;
+    background-color: #453E40;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .16);
+}
+#btnTrabajamosJuntos p {
+    color: #FFFFFF;
+    font-family: "Albra", serif;
+    font-size: 18pt;
+    
+}
+#btnTrabajamosJuntos:hover{
+    cursor: pointer;
+    background-color: #a7a398; 
+}
+#imgAboutMe{
+    grid-area: img;
+    background-color: aquamarine;
 }
