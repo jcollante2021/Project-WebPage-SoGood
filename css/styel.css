@@ -114,7 +114,7 @@ body{
 //////////// CONTENEDOR LOGO 1 /////////////
 /////////////////////////////////////////*/
 
-#contenedorLogo1{
+.contenedorLogo{
     width: 100%;
     height: 100vh;
     display: flex;
