@@ -124,6 +124,32 @@ body{
     font-size: 40px;
     text-align: center;
 }
+#btnTrabajemos{
+    width: 289px;
+    height: 42px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 5px 5px #00000026;
+    border: 1px solid #453E40;
+    border-radius: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btnTrabajemos p{
+    font: normal normal normal 16px/24px Muli;
+    color: #453E40;
+    height: 24px;
+    text-align: center;
+    letter-spacing: 0px;
+}
+#btnTrabajemos:hover{
+    background-color: #453E40;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+#btnTrabajemos:hover p{
+    color: #fff;
+}
 
 /*///////////////////////////////////////////
 //////////// CONTENEDOR LOGO ///////////////
