@@ -155,12 +155,39 @@ body{
 //////////// CONTENEDOR LOGO ///////////////
 /////////////////////////////////////////*/
 
+#trabajeCon{
+    width: 100%;
+    height: 210px;
+    background-color: #E3E3E3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#textTrabajeCon{
+    width: 200px;
+    top: 2647px;
+    left: 142px;
+    font-size: 25px;
+    position: absolute;
+}
+#divImgTrabajeCon{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.imgTrabajeCon{
+    width: 340px;
+}
 .contenedorLogo{
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#contenedorMediano{
+    height: 75vh;
 }
 
 /*///////////////////////////////////////////
@@ -197,28 +224,13 @@ body{
     justify-self: center;
     line-height: 2rem;
 }
-#btnTrabajamosJuntos{
+#btnAboutMe{
     align-self: center;
     justify-self: center;
     grid-area: boton;
-    width: 365px;
-    height: 56px;
-    background-color: #453E40;
-    border-radius: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: .2s;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, .16);
-}
-#btnTrabajamosJuntos p {
-    color: #FFFFFF;
-    font-family: "Albra", serif;
-    font-size: 18pt;
-}
-#btnTrabajamosJuntos:hover{
-    cursor: pointer;
-    background-color: #a7a398; 
 }
 #imgAboutMe{
     grid-area: img;
@@ -233,7 +245,7 @@ body{
     width: 100%;
     height: 1224px;
     padding-bottom: 70px;
-    background-color: #ECECEE;
+    background-color: #A7A398;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -241,9 +253,9 @@ body{
 #contenedorPortfolio h2{
     color: #453E40;
     font-family: "Albra", serif;
-    font-size: 35pt;
+    font-size: 50px;
     padding-top: 50px;
-    padding-left: 150px;
+    padding-left: 142px;
     padding-bottom: 50px;
 }
 #contenedorImgPortfolio{
@@ -251,13 +263,13 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 .imgPortfolio{
     background-color: aquamarine;
     width: 430px;
     height: 430px;
-    margin: 15px;
+    margin: 9px;
     transition: opacity .2s;
 }
 .imgPortfolio:hover{
@@ -267,22 +279,97 @@ body{
     margin-top: 70px;
     align-self: center;
     justify-self: center;
-    width: 365px;
-    height: 56px;
-    background-color: #453E40;
-    border-radius: 16px;
+}
+
+/*///////////////////////////////////////////
+//////////// FONDO SUSTENTABLE  ////////////
+/////////////////////////////////////////*/
+
+#fondoSustentable{
+    background-color: #F2E3DF;
+}
+#imgFondoSustentable{
+    width: 1202px;
+    position: absolute;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+
+/*///////////////////////////////////////////
+////////////// COMO AYUDARTE  //////////////
+/////////////////////////////////////////*/
+
+#contenedorComoAyudarte{
+    width: 100%;
+    height: 1086px;
+    background-color: #ECECEE;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 15% 15% 50% 20%;
+    grid-template-areas:    "titulo img"
+                            "parrafoPrimero img"
+                            "parrafoSegundo img"
+                            "boton img";
+    
+}
+#contenedorComoAyudarte h2{
+    color: #453E40;
+    font-family: "Albra", serif;
+    font-size: 50px;
+    grid-area: titulo;
+    align-self: flex-end;
+    padding-left: 100px;
+    align-self: center;
+}
+.textPrimarioAyuda{
+    font-family: "Muli", serif;
+    font-size: 16pt;
+    padding-left: 100px;
+    width: 800px;
+    text-align: center;
+    color: #453E40;
+    align-self: center;
+    justify-self: center;
+    grid-area: parrafoPrimero;
+}
+.textSecundarioAyuda{
+    font-family: "Muli", serif;
+    font-size: 17pt;
+    padding-left: 100px;
+    width: 800px;
+    text-align: left;
+    color: #453E40;
+    align-self: center;
+    justify-self: center;
+    grid-area: parrafoSegundo;
+}
+#btnComoAyudarte{
+    align-self: center;
+    justify-self: center;
+    grid-area: boton;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: .2s;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, .16);
 }
-#btnPortfolio p {
-    color: #FFFFFF;
+#imgComoAyudarte{
+    grid-area: img;
+    background-color: aquamarine;
+}
+
+/*///////////////////////////////////////////
+////////////// TESTIMONIOS /////////////////
+/////////////////////////////////////////*/
+
+#contenedorTestimonios{
+    background-color: #8FADB3;
+    height: 808px;
+}
+
+#contenedorTestimonios h2{
+    color: #453E40;
     font-family: "Albra", serif;
-    font-size: 18pt;
-}
-#btnPortfolio:hover{
-    cursor: pointer;
-    background-color: #a7a398; 
+    font-size: 50px;
+    position: absolute;
+    top: 6700px;
+    left: 142px;
 }
