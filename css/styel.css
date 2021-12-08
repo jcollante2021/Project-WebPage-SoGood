@@ -364,7 +364,6 @@ body{
     background-color: #8FADB3;
     height: 808px;
 }
-
 #contenedorTestimonios h2{
     color: #453E40;
     font-family: "Albra", serif;
@@ -372,4 +371,61 @@ body{
     position: absolute;
     top: 6700px;
     left: 142px;
+}
+#divGridTestimonios img{
+    width: 137px;
+}
+#divGridTestimonios {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#boxTextoTestimonios{
+    width: 618px;
+    height: 534px;
+    background-color: #B5C9CD;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center
+}
+#divCuerpoText{
+    width: 520px;
+    height: 287px;
+}
+#divCuerpoText p{
+    font-size: 24px;
+    font-family: "Muli", serif;
+    font-weight: 600;
+    line-height: 40px
+}
+#divAutor{
+    width: 158px;
+    height: 67px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+#autora{
+    font-size: 24px;
+    font-family: "Albra", serif;
+}
+#autoraInfo{
+    font-size: 15px;
+    font-family: "Muli", serif;
+}
+#divStar img{
+    width: 21px;
+    margin-bottom: 45px;
+}
+#primeraComilla{
+    padding-right: 50px;
+}
+#segundaComilla{
+    padding-right: 50px;
+    transform: scaleY(-1) scaleX(-1);
 }
